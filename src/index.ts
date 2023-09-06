@@ -1,1 +1,1 @@
-export type Part = 'uncommon' | 'rare' | 'epic' | 'legendary'
+export * from './enum';
