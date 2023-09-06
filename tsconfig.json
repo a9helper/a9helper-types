@@ -5,8 +5,20 @@
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
-    "lib": ["es6"]
+    "lib": [
+      "es6"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/*"
+  ]
 }
