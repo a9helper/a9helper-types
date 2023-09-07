@@ -37,7 +37,7 @@ export enum CareerRaceType {
 export interface CareerRace {
   order: number
   type: CareerRaceType
-  limit: string
+  limitCarId: string
   careerSeasonId: string
   mapTrackId: string
 

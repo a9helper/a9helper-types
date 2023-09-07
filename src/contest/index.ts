@@ -1,11 +1,26 @@
-import { SpecialEventData } from "./SpecialEventData"
+import { SpecialEventData } from './SpecialEventData'
 
 export interface ContestReword {
   rewordType: string
   rewordName: string
 }
 
-export type ContestType = '寻车' | '巅峰'
+export const contestTypeList = [
+  '寻车',
+  '惊艳亮相',
+  '速度爆发',
+  '传奇周末',
+  '传奇周末',
+  '周末爆冲',
+  '特殊赛',
+  '大奖赛',
+  '路试',
+  '通行证',
+  '巅峰',
+  '节日',
+] as const
+
+export type ContestType = (typeof contestTypeList)[number]
 
 export interface Contest {
   contestName: string
