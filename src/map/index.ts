@@ -10,7 +10,7 @@ export interface MapTheme {
 export type MapTrackLength = 30 | 60 | 90 | 120
 
 export interface MapTrack {
-  length: MapTrackLength | null
+  length: MapTrackLength
   mapThemeId: string
   nameGLCN: string
   nameGLEN: string
