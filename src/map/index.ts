@@ -48,5 +48,6 @@ export interface CareerRace {
   careerSeasonChapter: number
   server: GameServer
   careerSeasonOrder: number
-  mapTrackName: string
+  mapTrackNameGLCN: string
+  mapTrackNameALCN: string
 }
