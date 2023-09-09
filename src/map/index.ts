@@ -17,6 +17,7 @@ export interface MapTrack {
   nameALCN: string
 
   // redundant
+  mapThemeOrder: number
   mapThemeNameGLCN: string
   mapThemeNameALCN: string
 }
@@ -29,9 +30,9 @@ export interface CareerSeason {
 }
 
 export enum CareerRaceType {
-  Attack = 'attack',
-  Time = 'time',
-  Race = 'race',
+  Race = 1,
+  Time,
+  Attack,
 }
 
 export interface CareerRace {
@@ -40,7 +41,6 @@ export interface CareerRace {
   limitCarId: string
   careerSeasonId: string
   mapTrackId: string
-
 
   // redundant
 
