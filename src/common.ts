@@ -1,4 +1,4 @@
-export enum Quality {
+export enum CarQuality {
   Uncommon = 'uncommon',
   Rare = 'rare',
   Epic = 'epic',
@@ -11,3 +11,12 @@ export enum GameServer {
 }
 
 export type CarClass = 'D' | 'C' | 'B' | 'A' | 'S' | 'R'
+
+export enum WorldLeague {
+  Bronze,
+  Silver,
+  Gold,
+  Platinum,
+  Legend,
+  Diamond,
+}

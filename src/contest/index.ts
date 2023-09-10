@@ -22,6 +22,12 @@ export const contestTypeList = [
 
 export type ContestType = (typeof contestTypeList)[number]
 
+interface ContestChild{
+  name: string
+  startTime: number
+  endTime: number
+}
+
 export interface Contest {
   contestName: string
   rewords: ContestReword[]
@@ -32,4 +38,5 @@ export interface Contest {
   featuredCars: string[]
   isPreRelease?: boolean
   specialEventData?: SpecialEventData
+  children?: ContestChild[]
 }

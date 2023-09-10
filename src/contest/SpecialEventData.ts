@@ -7,7 +7,7 @@ interface SEToolCar {
   star: number
 }
 
-interface reword {
+interface RewordCommon {
   type:
     | 'seCard'
     | 'seKey'
@@ -17,14 +17,29 @@ interface reword {
     | 'credit'
     | 'seSkin'
     | 'seasonToken'
+    | 'ultimatePart'
   count: number
 }
 
-type rewordType = reword['type']
+interface RewordUltimate{
+  type: 'ultimatePart'|'ultimateCard'
+  count: number
+  cardClass: string
+}
+
+interface RewordCar{
+  type: 'carCard'
+  count: number
+  car_id: string
+}
+
+type Reword = RewordCommon | RewordUltimate | RewordCar
+
+type rewordType = Reword['type']
 
 interface processReword {
   conditions: number
-  reword: reword
+  reword: Reword
 }
 
 interface join {
@@ -41,12 +56,12 @@ interface mission {
   toolCars: toolCar[]
   join: join
   conditions: number
-  rewords: reword[]
+  rewords: Reword[]
 }
 
 interface stage {
   stage?: number
-  clubRewords: reword[]
+  clubRewords: Reword[]
   unlockConditions: number
   missions: mission[]
 }
