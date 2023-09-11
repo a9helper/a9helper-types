@@ -1,3 +1,4 @@
+import DSData from './DSData'
 import { SpecialEventData } from './SpecialEventData'
 
 export interface ContestReword {
@@ -38,5 +39,6 @@ export interface Contest {
   featuredCars: string[]
   isPreRelease?: boolean
   specialEventData?: SpecialEventData
+  dsData:DSData
   children?: ContestChild[]
 }
