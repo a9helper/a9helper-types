@@ -12,10 +12,13 @@ export interface UpgradeStageModel {
 }
 
 export interface UpgradePartModel {
+  carClass: CarClass
+  star: number
   uncommonPart: number
   rarePart: number
   epicPart: number
   legendaryPart: number
+  partCost: number
 }
 
 export interface Decal {
@@ -23,16 +26,23 @@ export interface Decal {
   image: string
 }
 
-export const launchContestList=[
-  
-'战利品',
-'独家赛事',
-'寻车',
-'惊艳亮相',
-
+export const launchContestList = [
+  '战利品',
+  '每日任务',
+  '独家赛事',
+  '寻车',
+  '惊艳亮相',
+  '周末爆冲',
+  '特殊赛',
+  '大奖赛',
+  '联会赛事',
+  '通行证',
+  '1VS1',
+  '多人',
+  'Clash',
+  '商店礼包',
 ]
-
-export interface Car extends UpgradePartModel {
+export interface Car   {
   // 基础信息
   server: GameServer
   fullName: string
@@ -66,15 +76,22 @@ export interface Car extends UpgradePartModel {
 
   // 改装信息
   // extends UpgradePartModel
-  uncommonPartCost: number // todo: 快速选择
   stageCostId: string
+  costList: number[]
   stageCost: number
+
+  uncommonPartCost: number // todo: 快速选择
+  uncommonPart: number
+  rarePart: number
+  epicPart: number
+  legendaryPart: number
   partCost: number
+
   totalCost: number
 
   // 活动信息
   releaseVersion: string
-  getMethod: string | null 
+  getMethod: string | null
   // 亮相方式不转移到车单，车单专指通行证时代的获取方式。
   packLevel: number | null
   storeEpic: boolean
