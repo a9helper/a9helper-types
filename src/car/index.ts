@@ -23,6 +23,15 @@ export interface Decal {
   image: string
 }
 
+export const launchContestList=[
+  
+'战利品',
+'独家赛事',
+'寻车',
+'惊艳亮相',
+
+]
+
 export interface Car extends UpgradePartModel {
   // 基础信息
   fullName: string
@@ -64,9 +73,17 @@ export interface Car extends UpgradePartModel {
 
   // 活动信息
   releaseVersion: string
-  getMethod: string | null
+  getMethod: string | null 
+  // 亮相方式不转移到车单，车单专指通行证时代的获取方式。
   packLevel: number | null
   storeEpic: boolean
+  storeClash: boolean
   elite: boolean // 国服现在没有了
   worldLeague: WorldLeague
+  rewardsWorldLeague: WorldLeague[]
+  rewardsWorldRank: boolean
+  rewardsClassCup: boolean
+  rewardsGoal: boolean
+  rewardsStarWay: boolean
+  rewardsHunt: boolean
 }

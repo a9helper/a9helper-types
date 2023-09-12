@@ -4,12 +4,31 @@ export interface SubInventory {
   carIds: string[]
 }
 
+export type ContestCommonType =
+  | '战利品'
+  | '每日任务'
+  | '级别杯'
+  | '传奇商店'
+  | '独家赛事'
+  | '寻车'
+  | '通行证'
+  | '惊艳亮相'
+  | '多人'
+  | '1VS1'
+  | '特殊赛事'
+  | '大奖赛'
+  | '路试'
+  | '车联赛事'
+  | '星路'
+  | 'Clash'
+
 interface Inventory {
   name: string
   count: number
   content: string
   abstract: string
   subInventories: SubInventory[]
+  contestType: ContestCommonType
 }
 
 export default Inventory
