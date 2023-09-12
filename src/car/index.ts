@@ -2,7 +2,7 @@ export interface Brand {
   name: string
 }
 
-import { CarClass, CarQuality, WorldLeague } from '@/index'
+import { CarClass, CarQuality, GameServer, WorldLeague } from '@/index'
 
 export interface UpgradeStageModel {
   carClass: CarClass
@@ -34,6 +34,7 @@ export const launchContestList=[
 
 export interface Car extends UpgradePartModel {
   // 基础信息
+  server: GameServer
   fullName: string
   car_id: string
   brand: string
