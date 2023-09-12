@@ -1,3 +1,5 @@
+import { GameServer } from '..'
+
 export interface SubInventory {
   name: string
   content: string
@@ -23,6 +25,7 @@ export type ContestCommonType =
   | 'Clash'
 
 interface Inventory {
+  server: GameServer
   name: string
   count: number
   content: string
