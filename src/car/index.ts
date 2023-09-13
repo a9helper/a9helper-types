@@ -28,6 +28,8 @@ export interface Decal {
   image: string
 }
 
+export type RoadsterType = 'fold' | 'nofold' | null
+
 export const launchContestList = [
   '战利品',
   '每日任务',
@@ -61,7 +63,7 @@ export interface CarBasic {
   decals: Decal[]
   decalsExclusive: Decal[]
   bodyKit: boolean
-  roadster: boolean
+  roadster: RoadsterType
   nitroVisualsCount: number
 }
 
