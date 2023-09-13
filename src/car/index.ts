@@ -5,6 +5,7 @@ export interface Brand {
 import { CarClass, CarQuality, GameServer, WorldLeague } from '@/index'
 
 export interface UpgradeStageModel {
+  server: GameServer
   carClass: CarClass
   star: number
   costList: number[]
@@ -12,6 +13,7 @@ export interface UpgradeStageModel {
 }
 
 export interface UpgradePartModel {
+  server: GameServer
   carClass: CarClass
   star: number
   uncommonPart: number
@@ -76,7 +78,7 @@ export interface Car   {
 
   // 改装信息
   // extends UpgradePartModel
-  stageCostId: string | null
+  // stageCostId: string | null
   stageCount: number | null
   costList: number[]
   stageCost: number | null
