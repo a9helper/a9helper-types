@@ -76,9 +76,10 @@ export interface Car   {
 
   // 改装信息
   // extends UpgradePartModel
-  stageCostId: string
+  stageCostId: string | null
+  stageCount: number | null
   costList: number[]
-  stageCost: number
+  stageCost: number | null
 
   uncommonPartCost: number // todo: 快速选择
   uncommonPart: number
