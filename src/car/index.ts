@@ -53,6 +53,7 @@ export interface Car   {
   nickName: string
   keyWords: string
   carClass: CarClass
+  carClassOrder: number
   star: number
   quality: CarQuality
   bps: number[]
