@@ -44,7 +44,7 @@ export const launchContestList = [
   'Clash',
   '商店礼包',
 ]
-export interface Car   {
+export interface CarBasic {
   // 基础信息
   server: GameServer
   fullName: string
@@ -63,7 +63,9 @@ export interface Car   {
   bodyKit: boolean
   roadster: boolean
   nitroVisualsCount: number
+}
 
+export interface CarPerf {
   // 性能信息
   rank: number
   topSpeed: number
@@ -76,7 +78,9 @@ export interface Car   {
   speedOrange: number | null
   speedPurple: number | null
   speedAir: number | null
+}
 
+export interface CarUpgrade {
   // 改装信息
   // extends UpgradePartModel
   // stageCostId: string | null
@@ -92,7 +96,9 @@ export interface Car   {
   partCost: number
 
   totalCost: number
+}
 
+export interface CarEvent {
   // 活动信息
   releaseVersion: string
   getMethod: string | null
@@ -109,3 +115,5 @@ export interface Car   {
   rewardsStarWay: boolean
   rewardsHunt: boolean
 }
+
+export interface Car extends CarBasic, CarPerf, CarUpgrade, CarEvent {}
