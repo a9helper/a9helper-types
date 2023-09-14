@@ -13,10 +13,10 @@ export enum GameServer {
 export type CarClass = 'D' | 'C' | 'B' | 'A' | 'S' | 'R'
 
 export enum WorldLeague {
-  Bronze,
-  Silver,
-  Gold,
-  Platinum,
-  Legend,
-  Diamond,
+  Bronze = 'bronze',
+  Silver = 'silver',
+  Gold = 'gold',
+  Platinum = 'platinum',
+  Legend = 'legend',
+  Diamond = 'diamond',
 }
