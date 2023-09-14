@@ -65,6 +65,7 @@ export interface CarBasic {
   bodyKit: boolean
   roadster: RoadsterType
   nitroVisualsCount: number
+  releaseVersion: string
 }
 
 export interface CarPerf {
@@ -74,21 +75,21 @@ export interface CarPerf {
   acceleration: number
   handling: number
   nitro: number
-  nitroDuration: number | null
-  speedNitro: number | null
-  speedBlue: number | null
-  speedOrange: number | null
-  speedPurple: number | null
-  speedAir: number | null
+  nitroDuration: number
+  speedNitro: number
+  speedBlue: number
+  speedOrange: number
+  speedPurple: number
+  speedAir: number
 }
 
 export interface CarUpgrade {
   // 改装信息
   // extends UpgradePartModel
   // stageCostId: string | null
-  stageCount: number | null
+  stageCount: number
   costList: number[]
-  stageCost: number | null
+  stageCost: number
 
   uncommonPartCost: number // todo: 快速选择
   uncommonPart: number
@@ -102,10 +103,9 @@ export interface CarUpgrade {
 
 export interface CarEvent {
   // 活动信息
-  releaseVersion: string
-  getMethod: string | null
+  getMethod: string
   // 亮相方式不转移到车单，车单专指通行证时代的获取方式。
-  packLevel: number | null
+  packLevel: number
   storeEpic: boolean
   storeClash: boolean
   elite: boolean // 国服现在没有了
