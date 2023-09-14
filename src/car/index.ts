@@ -109,7 +109,7 @@ export interface CarEvent {
   storeEpic: boolean
   storeClash: boolean
   elite: boolean // 国服现在没有了
-  worldLeague: WorldLeague
+  worldLeague: WorldLeague | null // 隐藏车、未发布的车、未加入多人的车
   rewardsWorldLeague: WorldLeague[]
   rewardsWorldRank: boolean
   rewardsClassCup: boolean
