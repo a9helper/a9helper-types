@@ -1,6 +1,6 @@
 {
   "name": "a9helper-types",
-  "version": "0.0.48",
+  "version": "0.0.50",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
@@ -25,5 +25,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WalterBrightHub/a9helper-types.git"
+  },
+  "devDependencies": {
+    "tsc-alias": "^1.8.7"
   }
 }
