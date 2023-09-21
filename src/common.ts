@@ -20,3 +20,13 @@ export enum WorldLeague {
   Legend = 'legend',
   Diamond = 'diamond',
 }
+
+export const getWorldLeagueName = (league: WorldLeague) =>
+  ({
+    [WorldLeague.Bronze]: '青铜',
+    [WorldLeague.Silver]: '白银',
+    [WorldLeague.Gold]: '黄金',
+    [WorldLeague.Platinum]: '白金',
+    [WorldLeague.Legend]: '传奇',
+    [WorldLeague.Diamond]: '钻石',
+  }[league])
