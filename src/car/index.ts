@@ -1,5 +1,6 @@
 export interface Brand {
   name: string
+  keyWords: string
 }
 
 import { CarClass, CarQuality, GameServer, WorldLeague } from '@/index'
