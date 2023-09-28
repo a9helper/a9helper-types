@@ -1,36 +1,37 @@
-import { GameServer } from "..";
+import { GameServer } from '..'
 
-
-export interface SeasonPassRewardCarCard
-{
-  type: 'carCard',
-  car_id: string,
+export interface SeasonPassRewardCarCard {
+  type: 'carCard'
+  car_id: string
   count: number
 }
 
-export interface SeasonPassRewardUltimateCard{
-  type: 'ultimateCard',
-  cardClass: string,
+export interface SeasonPassRewardUltimateCard {
+  type: 'ultimateCard'
+  cardClass: string
   count: number
 }
-type SeasonPassReward= SeasonPassRewardCarCard | SeasonPassRewardUltimateCard
+type SeasonPassReward = SeasonPassRewardCarCard | SeasonPassRewardUltimateCard
 
-
-export interface SeasonPassMission{
+export interface SeasonPassMission {
   tags: string[]
   mapNames: string[]
   solution: string
 }
 
-
-export interface Episode{
+export interface Episode {
   order: number
   missions: SeasonPassMission[]
   rewards: SeasonPassReward[]
 }
 
-export interface SeasonPass{
-  mainCarId: string
+export interface SeasonPassCar {
+  car_id: string
+  nickName: string
+}
+
+export interface SeasonPass {
+  featuredCars: SeasonPassCar[]
   server: GameServer
   name: string
   startTime: number
