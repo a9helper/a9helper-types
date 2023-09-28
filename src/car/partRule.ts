@@ -257,4 +257,12 @@ export const partRuleListAL: PartRule[] = [
     epicPart: 4,
     legendaryPart: 0,
   },
+  {
+    carClass: 'R',
+    star: 6,
+    uncommonPart: 4,
+    rarePart: 8,
+    epicPart: 6,
+    legendaryPart: 4,
+  },
 ]
