@@ -82,6 +82,7 @@ export interface CarPerf {
   speedOrange: number
   speedPurple: number
   speedAir: number
+  epicRanks: number[] // todo：金卡计算器
 }
 
 export interface CarUpgrade {
@@ -101,7 +102,6 @@ export interface CarUpgrade {
 
   totalCost: number
 
-  epicRanks: number[] // todo：金卡计算器
 }
 
 export interface CarEvent {
