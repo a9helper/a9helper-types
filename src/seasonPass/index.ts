@@ -1,28 +1,34 @@
 import { GameServer } from '..'
 
 export interface SeasonPassRewardCarCard {
-  type: 'carCard'
   car_id: string
+  carClass: string
+  nickName: string
   count: number
 }
 
 export interface SeasonPassRewardUltimateCard {
-  type: 'ultimateCard'
   cardClass: string
   count: number
 }
-type SeasonPassReward = SeasonPassRewardCarCard | SeasonPassRewardUltimateCard
+
+export interface SeasionPassMissionTrack {
+  mapTrackId: string
+  mapTrackName: string
+  mapThemeName: string
+}
 
 export interface SeasonPassMission {
   tags: string[]
-  mapNames: string[]
+  mapTrackList: SeasionPassMissionTrack[]
   solution: string
 }
 
 export interface Episode {
   order: number
   missions: SeasonPassMission[]
-  rewards: SeasonPassReward[]
+  carCardRewards: SeasonPassRewardCarCard[]
+  ultimateCardRewards: SeasonPassRewardUltimateCard[]
 }
 
 export interface SeasonPassCar {

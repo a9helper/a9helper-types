@@ -100,6 +100,8 @@ export interface CarUpgrade {
   partCost: number
 
   totalCost: number
+
+  epicRanks: number[] // todo：金卡计算器
 }
 
 export interface CarEvent {
