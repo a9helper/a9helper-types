@@ -24,7 +24,7 @@ export const contestTypeList = [
 
 export type ContestType = (typeof contestTypeList)[number]
 
-interface ContestChild {
+export interface ContestChild {
   name: string
   startTime: number
   endTime: number
@@ -32,14 +32,16 @@ interface ContestChild {
 
 export interface Contest {
   contestName: string
-  rewords: ContestReword[]
   mapName: string
   startTime: number
   endTime: number
   type: ContestType
   featuredCars: string[]
-  isPreRelease?: boolean
   specialEventData?: SpecialEventData
   dsData?: DSData
   children?: ContestChild[]
+
+  // 这两个不启用
+  rewords?: ContestReword[]
+  isPreRelease?: boolean
 }
