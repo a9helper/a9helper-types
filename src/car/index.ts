@@ -29,7 +29,11 @@ export interface Decal {
   image: string
 }
 
-export type RoadsterType = 'fold' | 'nofold' | null
+export enum RoadsterType {
+  None = 1,
+  Fold,
+  NotFold,
+}
 
 export const launchContestList = [
   '战利品',
@@ -101,7 +105,6 @@ export interface CarUpgrade {
   partCost: number
 
   totalCost: number
-
 }
 
 export interface CarEvent {
