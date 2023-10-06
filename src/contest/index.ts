@@ -39,6 +39,7 @@ export interface Contest {
   type: ContestType
   server: GameServer
   featuredCars: string[]
+  toolCars?: string[] //todo: 工具车查询
   specialEventData?: SpecialEventData
   dsData?: DSData
   children?: ContestChild[]
