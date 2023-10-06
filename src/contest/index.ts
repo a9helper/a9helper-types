@@ -1,3 +1,4 @@
+import { GameServer } from '..'
 import DSData from './DSData'
 import { SpecialEventData } from './SpecialEventData'
 
@@ -36,6 +37,7 @@ export interface Contest {
   startTime: number
   endTime: number
   type: ContestType
+  server: GameServer
   featuredCars: string[]
   specialEventData?: SpecialEventData
   dsData?: DSData
