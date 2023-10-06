@@ -1,6 +1,6 @@
 {
   "name": "a9helper-types",
-  "version": "0.0.62",
+  "version": "0.0.64",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [

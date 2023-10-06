@@ -8,21 +8,23 @@ export interface ContestReword {
 
 export const contestTypeList = [
   '寻车',
+  '巅峰',
   '惊艳亮相',
   '速度爆发',
   '传奇周末',
   '周末爆冲',
   '特殊赛',
   '大奖赛',
-  '路试',
   '通行证',
-  '巅峰',
+  '星路',
+  '展厅',
+  '路试',
   '节日',
 ] as const
 
 export type ContestType = (typeof contestTypeList)[number]
 
-interface ContestChild{
+interface ContestChild {
   name: string
   startTime: number
   endTime: number
@@ -38,6 +40,6 @@ export interface Contest {
   featuredCars: string[]
   isPreRelease?: boolean
   specialEventData?: SpecialEventData
-  dsData:DSData
+  dsData?: DSData
   children?: ContestChild[]
 }
