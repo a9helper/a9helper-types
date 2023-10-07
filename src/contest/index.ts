@@ -40,7 +40,7 @@ export interface Contest {
   server: GameServer
   featuredCars: string[]
   toolCars?: string[] //todo: 工具车查询
-  specialEventData?: SpecialEventData
+  specialEventData?: SpecialEventData | null
   dsData?: DSData
   children?: ContestChild[]
 
