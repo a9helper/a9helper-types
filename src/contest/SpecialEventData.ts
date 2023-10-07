@@ -21,13 +21,13 @@ interface RewordCommon {
   count: number
 }
 
-interface RewordUltimate{
-  type: 'ultimatePart'|'ultimateCard'
+interface RewordUltimate {
+  type: 'ultimatePart' | 'ultimateCard'
   count: number
   cardClass: string
 }
 
-interface RewordCar{
+interface RewordCar {
   type: 'carCard'
   count: number
   car_id: string
@@ -37,33 +37,33 @@ type Reword = RewordCommon | RewordUltimate | RewordCar
 
 type rewordType = Reword['type']
 
-interface processReword {
+interface ProcessReword {
   conditions: number
   reword: Reword
 }
 
-interface join {
+interface Join {
   star: number
   rank: number
 }
 
-interface toolCar {
+export interface ToolCar {
   car_id: string
   freeTry: boolean
 }
 
-interface mission {
-  toolCars: toolCar[]
-  join: join
+export interface Mission {
+  toolCars: ToolCar[]
+  join: Join
   conditions: number
   rewords: Reword[]
 }
 
-interface stage {
+export interface Stage {
   stage?: number
   clubRewords: Reword[]
   unlockConditions: number
-  missions: mission[]
+  missions: Mission[]
 }
 
 export interface SpecialEventData {
@@ -76,6 +76,6 @@ export interface SpecialEventData {
   dataTableImage?: string
   toolCars: SEToolCar[]
   notes: string[]
-  processRewords: processReword[]
-  stages: stage[]
+  processRewords: ProcessReword[]
+  stages: Stage[]
 }
