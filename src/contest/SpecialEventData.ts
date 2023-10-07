@@ -1,4 +1,4 @@
-interface SEToolCar {
+export interface SEToolCar {
   car_id: string
   fullName: string
   nickName: string
@@ -7,17 +7,20 @@ interface SEToolCar {
   star: number
 }
 
-interface RewordCommon {
-  type:
-    | 'seCard'
-    | 'seKey'
-    | 'token'
-    | 'sePack'
-    | 'sePart'
-    | 'credit'
-    | 'seSkin'
-    | 'seasonToken'
-    | 'ultimatePart'
+export enum RewordType {
+  seCard = 'seCard',
+  seKey = 'seKey',
+  token = 'token',
+  sePack = 'sePack',
+  sePart = 'sePart',
+  credit = 'credit',
+  seSkin = 'seSkin',
+  seasonToken = 'seasonToken',
+  // ultimatePart='ultimatePart',
+}
+
+export interface RewordCommon {
+  type: RewordType
   count: number
 }
 
@@ -33,16 +36,16 @@ interface RewordCar {
   car_id: string
 }
 
-type Reword = RewordCommon | RewordUltimate | RewordCar
+type Reword = RewordCommon //| RewordUltimate | RewordCar
 
 type rewordType = Reword['type']
 
-interface ProcessReword {
+export interface ProcessReword {
   conditions: number
   reword: Reword
 }
 
-interface Join {
+export interface Join {
   star: number
   rank: number
 }
