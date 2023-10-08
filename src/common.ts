@@ -8,6 +8,7 @@ export enum CarQuality {
 export enum GameServer {
   AL = 'al',
   GL = 'gl',
+  NS = 'ns',
 }
 
 export type CarClass = 'D' | 'C' | 'B' | 'A' | 'S' | 'R'
