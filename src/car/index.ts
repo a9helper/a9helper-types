@@ -49,7 +49,9 @@ export const launchContestList = [
   '1VS1',
   '多人',
   'Clash',
+  '擂台赛',
   '商店礼包',
+  '氪金',
 ]
 export interface CarBasic {
   // 基础信息
@@ -113,7 +115,7 @@ export interface CarEvent {
   // 亮相方式不转移到车单，车单专指通行证时代的获取方式。
   packLevel: number
   storeEpic: boolean
-  storeClash: boolean
+  storeClash: boolean // 国服擂台赛
   elite: boolean // 国服现在没有了
   worldLeague: WorldLeague | null // 隐藏车、未发布的车、未加入多人的车
   rewardsWorldLeague: WorldLeague[]
