@@ -60,6 +60,7 @@ export interface CarBasic {
   fullName: string
   car_id: string
   brand: string
+  brandLogoImageUrl: string
   nickName: string
   keyWords: string
   carClass: CarClass
