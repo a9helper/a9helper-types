@@ -52,7 +52,10 @@ export const launchContestList = [
   'Clash',
   '擂台赛',
   '商店礼包',
+  '狂飙寻宝',
+  '狂飙赏金',
   '氪金',
+  '其他',
 ]
 export interface CarBasic {
   // 基础信息
