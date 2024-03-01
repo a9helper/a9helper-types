@@ -78,6 +78,7 @@ export interface CarBasic {
   roadster: RoadsterType
   nitroVisualsCount: number
   releaseVersion: string
+  carImageUrl: string
 }
 
 export interface CarPerf {
