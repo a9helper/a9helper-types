@@ -36,6 +36,7 @@ export enum RoadsterType {
   NotFold,
 }
 
+// 应该放到后台维护
 export const launchContestList = [
   '战利品',
   '每日任务',
@@ -95,6 +96,13 @@ export interface CarPerf {
   speedPurple: number
   speedAir: number
   epicRanks: number[] // todo：金卡计算器
+  topSpeedOC: number
+  accelerationOC: number
+  handlingOC: number
+  nitroOC: number
+  driftV: number
+  driftT: number
+  driftR: number // r=v*t/2pi
 }
 
 export interface CarUpgrade {
