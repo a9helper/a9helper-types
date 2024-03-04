@@ -36,6 +36,10 @@ export enum RoadsterType {
   NotFold,
 }
 
+export interface LaunchContest {
+  name: string
+}
+
 // 应该放到后台维护
 export const launchContestList = [
   '战利品',
