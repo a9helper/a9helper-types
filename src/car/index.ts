@@ -38,6 +38,7 @@ export enum RoadsterType {
 
 export interface LaunchContest {
   name: string
+  order: number
 }
 
 // 应该放到后台维护
