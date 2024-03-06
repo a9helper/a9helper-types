@@ -82,9 +82,10 @@ export interface CarBasic {
   decalsExclusive: Decal[]
   bodyKit: boolean
   roadster: RoadsterType
-  nitroVisualsCount: number
+  nitroVisualsCount: number // 考虑去掉
   releaseVersion: string
   carImageUrl: string
+  nitroVisuals: Decal
 }
 
 export interface CarPerf {
