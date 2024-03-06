@@ -85,7 +85,7 @@ export interface CarBasic {
   nitroVisualsCount: number // 考虑去掉
   releaseVersion: string
   carImageUrl: string
-  nitroVisuals: Decal
+  nitroVisuals: Decal[]
 }
 
 export interface CarPerf {
