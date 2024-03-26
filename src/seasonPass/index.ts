@@ -8,7 +8,7 @@ export interface SeasonPassRewardCarCard {
 }
 
 export interface SeasonPassRewardUltimateCard {
-  cardClass: string
+  carClass: string
   count: number
 }
 
@@ -34,6 +34,7 @@ export interface Episode {
 export interface SeasonPassCar {
   car_id: string
   nickName: string
+  fullName: string
 }
 
 export interface SeasonPass {

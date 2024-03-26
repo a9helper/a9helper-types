@@ -7,8 +7,10 @@ export interface ContestReword {
   rewordName: string
 }
 
+// 放在数据库中维护
 export const contestTypeList = [
   '寻车',
+  '赛季寻车',
   '巅峰',
   '惊艳亮相',
   '速度爆发',
@@ -18,8 +20,10 @@ export const contestTypeList = [
   '大奖赛',
   '通行证',
   '星路',
-  '展厅',
+  // '展厅',
   '路试',
+  '狂飙寻宝',
+  '狂飙赏金',
   '节日',
 ] as const
 
@@ -36,11 +40,11 @@ export interface Contest {
   mapName: string
   startTime: number
   endTime: number
-  type: ContestType
+  type: string
   server: GameServer
   featuredCars: string[]
   toolCars?: string[] //todo: 工具车查询
-  specialEventData?: SpecialEventData | null
+  specialEventData?: SpecialEventData
   dsData?: DSData
   children?: ContestChild[]
 
