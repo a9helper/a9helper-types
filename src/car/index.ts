@@ -148,6 +148,10 @@ export interface CarEvent {
   rewardsStarWay: boolean
   rewardsShowRoom: boolean // 国服还没有上
   rewardsHunt: boolean
+  rewardsMastery: boolean // 限国服
+  rewardsSponsor: boolean // 国服还没有上
+  rewardsDailyEvent: boolean // SLR国服
+  rewardsRoadTest: boolean // FF01
 }
 
 export interface Car extends CarBasic, CarPerf, CarUpgrade, CarEvent {}
