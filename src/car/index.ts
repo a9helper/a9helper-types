@@ -70,7 +70,7 @@ export interface CarBasic {
   car_id: string
   brand: string
   brandLogoImageUrl: string
-  nickName: string
+  nickName: string // 空格分隔多个名称
   keyWords: string
   carClass: CarClass
   carClassOrder: number
@@ -79,10 +79,12 @@ export interface CarBasic {
   bps: number[]
   isKeyCar: boolean
   decals: Decal[]
-  decalsExclusive: Decal[]
+  decalsAnimated: Decal[]
+  decalsAction: Decal[]
+  // decalsExclusive: Decal[]  // 去掉
   bodyKit: boolean
   roadster: RoadsterType
-  nitroVisualsCount: number // 考虑去掉
+  // nitroVisualsCount: number // 考虑去掉
   releaseVersion: string
   carImageUrl: string
   nitroVisuals: Decal[]
@@ -110,6 +112,9 @@ export interface CarPerf {
   driftV: number
   driftT: number
   driftR: number // r=v*t/2pi
+  floatyV: number
+  floatyT: number
+  floatyR: number // r=v*t/2pi
 }
 
 export interface CarUpgrade {
@@ -144,7 +149,7 @@ export interface CarEvent {
   rewardsWorldLeague: WorldLeague[]
   rewardsWorldRank: boolean
   rewardsClassCup: boolean
-  rewardsGoal: boolean
+  rewardsGoal: boolean // 蓝牛子
   rewardsStarWay: boolean
   rewardsShowRoom: boolean // 国服还没有上
   rewardsHunt: boolean
