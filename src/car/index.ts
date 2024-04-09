@@ -150,7 +150,7 @@ export interface CarEvent {
   rewardsWorldRank: boolean
   rewardsClassCup: boolean
   rewardsGoal: boolean // 蓝牛子
-  rewardsStarWay: boolean
+  rewardsStarWay: boolean // 星路
   rewardsShowRoom: boolean // 国服还没有上
   rewardsHunt: boolean
   rewardsMastery: boolean // 限国服
@@ -158,6 +158,7 @@ export interface CarEvent {
   rewardsDailyEvent: boolean // SLR国服
   rewardsRoadTest: boolean // FF01
   rewardsLoot: boolean // 战利品
+  rewardsExclusive: boolean // 独家赛事
 }
 
 export interface Car extends CarBasic, CarPerf, CarUpgrade, CarEvent {}
