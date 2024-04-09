@@ -157,6 +157,7 @@ export interface CarEvent {
   rewardsSponsor: boolean // 国服还没有上
   rewardsDailyEvent: boolean // SLR国服
   rewardsRoadTest: boolean // FF01
+  rewardsLoot: boolean // 战利品
 }
 
 export interface Car extends CarBasic, CarPerf, CarUpgrade, CarEvent {}
