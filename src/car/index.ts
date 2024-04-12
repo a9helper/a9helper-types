@@ -103,7 +103,7 @@ export interface CarPerf {
   speedOrange: number
   speedPurple: number
   speedAir: number
-  epicRanks: number[] // todo：金卡计算器
+  epicRanks: number[] // todo：金卡计算器  //算了不做了！
   rankOC: number
   topSpeedOC: number
   accelerationOC: number
