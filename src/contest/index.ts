@@ -51,4 +51,7 @@ export interface Contest {
   // 这两个不启用
   rewords?: ContestReword[]
   isPreRelease?: boolean
+
+  updateSeason?: number
+  updateSeasonName?: string
 }
