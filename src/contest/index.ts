@@ -55,3 +55,6 @@ export interface Contest {
   updateSeason?: number
   updateSeasonName?: string
 }
+
+// 当前赛季的预告赛事：存在相同的updateSeason并且isPreRelease为false
+// 未来赛季的预告赛事：比当前赛季的updateSeason大

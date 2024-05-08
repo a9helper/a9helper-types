@@ -15,7 +15,7 @@ export interface UpdateSeason {
   startTime: number
   endTime: number
   name: string
-  order: number
+  // order: number
 }
 
 // 在赛事中，用season和name来显示预告赛事。
