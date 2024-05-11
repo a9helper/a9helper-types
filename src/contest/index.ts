@@ -8,9 +8,11 @@ export interface ContestReword {
 }
 
 // 放在数据库中维护
+// 算了写死吧
 export const contestTypeList = [
   '寻车',
-  '赛季寻车',
+  '赛季寻车', // 国服
+  '特殊寻车', // 国际服
   '巅峰',
   '惊艳亮相',
   '速度爆发',
@@ -21,14 +23,51 @@ export const contestTypeList = [
   '通行证',
   '星路',
   // '展厅',
-  '路试',
-  '狂飙寻宝',
-  '狂飙赏金',
+  '路试', //国际服
+  '狂飙寻宝', // 国服
+  '狂飙赏金', // 国服
   '节日',
 ] as const
 
 export type ContestType = (typeof contestTypeList)[number]
 
+export const contestTypeALList = [
+  '寻车',
+  '赛季寻车', // 国服
+  '巅峰',
+  '惊艳亮相',
+  '速度爆发',
+  '传奇周末',
+  '周末爆冲',
+  '特殊赛',
+  '大奖赛',
+  '通行证',
+  '星路',
+  // '展厅',
+  '狂飙寻宝', // 国服
+  '狂飙赏金', // 国服
+  '节日',
+] as const
+
+export type ContestTypeAL = (typeof contestTypeList)[number]
+export const contestTypeGLList = [
+  '寻车',
+  '特殊寻车', // 国际服
+  '巅峰',
+  '惊艳亮相',
+  '速度爆发',
+  '传奇周末',
+  '周末爆冲',
+  '特殊赛',
+  '大奖赛',
+  '通行证',
+  '星路',
+  // '展厅',
+  '路试', //国际服
+  '节日',
+] as const
+
+export type ContestTypeGL = (typeof contestTypeList)[number]
 export interface ContestChild {
   name: string
   startTime: number
