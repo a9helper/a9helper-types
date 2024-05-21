@@ -162,3 +162,15 @@ export interface CarEvent {
 }
 
 export interface Car extends CarBasic, CarPerf, CarUpgrade, CarEvent {}
+
+export type CarMeta = Pick<
+  Car,
+  | 'fullName'
+  | 'car_id'
+  | 'carImageUrl'
+  | 'carClass'
+  | 'rank'
+  | 'quality'
+  | 'isKeyCar'
+  | 'star'
+>
