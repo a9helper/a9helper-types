@@ -1,3 +1,4 @@
+import type { CarMeta } from '@/car'
 import { GameServer } from '..'
 import DSData from './DSData'
 import { SpecialEventData } from './SpecialEventData'
@@ -82,14 +83,14 @@ export interface Contest {
   type: string
   server: GameServer
   featuredCars: string[]
-  toolCars?: string[] //todo: 工具车查询
+  rewardCars: CarMeta[]
+  toolCars?: CarMeta[] //todo: 工具车查询
   specialEventData?: SpecialEventData
   dsData?: DSData
-  children?: ContestChild[]
-
-  // 这两个不启用
-  rewords?: ContestReword[]
   isPreRelease?: boolean
+  children?: ContestChild[] //不要了
+
+  rewords?: ContestReword[] // 老数据
 
   updateSeason?: number
   updateSeasonName?: string
