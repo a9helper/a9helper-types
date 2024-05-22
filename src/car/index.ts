@@ -4,7 +4,13 @@ export interface Brand {
   logoImageUrl: string
 }
 
-import { CarClass, CarQuality, GameServer, WorldLeague } from '@/index'
+import {
+  CarClass,
+  CarQuality,
+  GameServer,
+  WorldLeague,
+  type IDParams,
+} from '@/index'
 
 export interface UpgradeStageModel {
   server: GameServer
@@ -173,4 +179,5 @@ export type CarMeta = Pick<
   | 'quality'
   | 'isKeyCar'
   | 'star'
->
+> &
+  IDParams

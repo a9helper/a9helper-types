@@ -1,3 +1,7 @@
+export interface IDParams {
+  _id: string
+}
+
 export enum CarQuality {
   Uncommon = 'uncommon',
   Rare = 'rare',
