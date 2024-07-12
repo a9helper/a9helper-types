@@ -24,9 +24,15 @@ export interface SeasonPassMission {
   solution: string
 }
 
+export interface SeasonPassNormalMission {
+  type: string
+  count: number
+}
+
 export interface Episode {
   order: number
-  missions: SeasonPassMission[]
+  mapMissions: SeasonPassMission[]
+  normalMissions: SeasonPassNormalMission[]
   carCardRewards: SeasonPassRewardCarCard[]
   ultimateCardRewards: SeasonPassRewardUltimateCard[]
 }
