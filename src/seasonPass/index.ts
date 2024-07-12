@@ -1,3 +1,4 @@
+import type { CarMeta } from '@/car'
 import { GameServer } from '..'
 
 export interface SeasonPassRewardCarCard {
@@ -37,14 +38,14 @@ export interface Episode {
   ultimateCardRewards: SeasonPassRewardUltimateCard[]
 }
 
-export interface SeasonPassCar {
-  car_id: string
-  nickName: string
-  fullName: string
-}
+// export interface SeasonPassCar {
+//   car_id: string
+//   nickName: string
+//   fullName: string
+// }
 
 export interface SeasonPass {
-  featuredCars: SeasonPassCar[]
+  featuredCars: CarMeta[]
   server: GameServer
   name: string
   startTime: number
