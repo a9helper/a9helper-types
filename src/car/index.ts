@@ -92,6 +92,7 @@ export interface CarBasic {
   roadster: RoadsterType
   // nitroVisualsCount: number // 考虑去掉
   releaseVersion: string
+  releaseVersionOrder: number
   carImageUrl: string
   nitroVisuals: Decal[]
 }
