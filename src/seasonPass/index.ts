@@ -2,9 +2,7 @@ import type { CarMeta } from '@/car'
 import { GameServer } from '..'
 
 export interface SeasonPassRewardCarCard {
-  car_id: string
-  carClass: string
-  nickName: string
+  carMeta: CarMeta
   count: number
 }
 

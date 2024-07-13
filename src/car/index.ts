@@ -172,6 +172,7 @@ export interface Car extends CarBasic, CarPerf, CarUpgrade, CarEvent {}
 export type CarMeta = Pick<
   Car,
   | 'fullName'
+  | 'nickName'
   | 'car_id'
   | 'carImageUrl'
   | 'carClass'
