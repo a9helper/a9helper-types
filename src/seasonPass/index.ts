@@ -32,8 +32,15 @@ export interface Episode {
   order: number
   mapMissions: SeasonPassMission[]
   normalMissions: SeasonPassNormalMission[]
-  carCardRewards: SeasonPassRewardCarCard[]
-  ultimateCardRewards: SeasonPassRewardUltimateCard[]
+  carCardReward: {
+    carMeta: CarMeta
+    count: number
+  } //SeasonPassRewardCarCard[]
+  ultimateCardReward: {
+    carClass: string
+    count: number
+  }
+  //   SeasonPassRewardUltimateCard[]
 }
 
 // export interface SeasonPassCar {
