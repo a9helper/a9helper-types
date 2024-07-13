@@ -18,7 +18,7 @@ export interface SeasionPassMissionTrack {
 }
 
 export interface SeasonPassMission {
-  tags: string[]
+  tags: string //空格隔开
   mapTrackList: SeasionPassMissionTrack[]
   solution: string
 }
