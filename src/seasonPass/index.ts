@@ -1,5 +1,6 @@
 import type { CarMeta } from '@/car'
-import { GameServer } from '..'
+import { GameServer, type IDParams } from '..'
+import type { MapTrack } from '@/map'
 
 export interface SeasonPassRewardCarCard {
   carMeta: CarMeta
@@ -19,7 +20,7 @@ export interface SeasionPassMissionTrack {
 
 export interface SeasonPassMission {
   tags: string //空格隔开
-  mapTrackList: SeasionPassMissionTrack[]
+  mapTrackList: (MapTrack & IDParams)[]
   solution: string
 }
 
