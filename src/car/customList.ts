@@ -10,6 +10,7 @@ export interface CustomCarList {
   desc: string
   server: GameServer
   mainList: CarMeta[]
+  cover: CarMeta
   subList: {
     title: string
     desc: string
