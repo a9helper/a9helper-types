@@ -87,7 +87,7 @@ export interface Contest {
   toolCars?: CarMeta[] //todo: 工具车查询
   specialEventData?: SpecialEventData
   dsData?: DSData
-  isPreRelease?: boolean
+  isPreRelease?: boolean // 为true的时候为假的起始时间
   children?: ContestChild[] //不要了
 
   rewords?: ContestReword[] // 老数据
