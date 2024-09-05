@@ -153,6 +153,7 @@ export interface CarEvent {
   storeGauntlet: boolean // 国服对决擂台赛
   elite: boolean // 国服现在没有了
   worldLeague: WorldLeague | null // 隐藏车、未发布的车、未加入多人的车，赋值为null
+  worldLeagueDivision: number // 国际服小段位
   rewardsWorldLeague: WorldLeague[]
   rewardsWorldRank: boolean
   rewardsClassCup: boolean
