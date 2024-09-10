@@ -26,8 +26,8 @@ export const getRewordTypeName = (type: RewordType) => {
     [RewordType.token]: '代币',
 
     [RewordType.sePack]: '图纸包',
-    [RewordType.sePart]: '传奇零件',
-    [RewordType.credit]: '积分',
+    [RewordType.sePart]: '金卡',
+    [RewordType.credit]: '金币',
     [RewordType.seSkin]: '贴纸',
     [RewordType.seasonToken]: '赛季币',
   }[type]
