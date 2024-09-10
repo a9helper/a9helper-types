@@ -19,6 +19,20 @@ export enum RewordType {
   // ultimatePart='ultimatePart',
 }
 
+export const getRewordTypeName = (type: RewordType) => {
+  return {
+    [RewordType.seCard]: '图纸',
+    [RewordType.seKey]: '钥匙',
+    [RewordType.token]: '代币',
+
+    [RewordType.sePack]: '图纸包',
+    [RewordType.sePart]: '传奇零件',
+    [RewordType.credit]: '积分',
+    [RewordType.seSkin]: '贴纸',
+    [RewordType.seasonToken]: '赛季币',
+  }[type]
+}
+
 export interface RewordCommon {
   type: RewordType
   count: number
