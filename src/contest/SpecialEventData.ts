@@ -84,15 +84,16 @@ export interface Stage {
 }
 
 export interface SpecialEventData {
-  havePack: Boolean
-  haveClubRewords: Boolean
-  haveSkin: Boolean
-  havePackConditions: Boolean
-  haveEventKey: Boolean
-  packConditions: Number
+  havePack: boolean // 不太需要
+  haveClubRewords: boolean // 不太需要
+  haveSkin: boolean // 不太需要
+  havePackConditions: boolean // 不太需要
+  haveEventKey: boolean // 不太需要
+  packConditions: number
   dataTableImage?: string
   toolCars: SEToolCar[]
   notes: string[]
+  notesText?: string
   processRewords: ProcessReword[]
   stages: Stage[]
 }
