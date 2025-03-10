@@ -90,7 +90,7 @@ export interface SpecialEventData {
   havePackConditions: boolean // 不太需要
   haveEventKey: boolean // 不太需要
   packConditions: number
-  dataTableImage?: string
+  dataTableImage?: string // 不需要了
   toolCars: SEToolCar[]
   notes: string[]
   notesText?: string
