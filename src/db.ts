@@ -161,6 +161,7 @@ interface MapTheme {
 }
 
 type MapTrackLength = 30 | 60 | 90 | 120
+// 地图赛道
 interface MapTrack {
   length: MapTrackLength
   mapThemeId: string
